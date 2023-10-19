@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .grid-container {
+        display: grid;
+        background-color: #2196f3;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+        gap: 10px;
+      }
+      .item1 {
+        grid-column: 1/4;
+      }
+      .item2 {
+        grid-row: 2/4;
+      }
+      .item5 {
+        grid-column: 2/4;
+      }
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      This is a static template, there is no bundler or bundling involved!
+    </h1>
+    <div class="grid-container">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
+  </body>
+</html>
